@@ -93,10 +93,10 @@ async () => {
       ]);
 
   if(error){
-    alert("등록 실패 😢");
-    console.error(error);
-    return;
-  }
+  alert(JSON.stringify(error, null, 2));
+  console.error(error);
+  return;
+}
 
   document
   .getElementById("nickname")
