@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍓🫐🍌 아사이볼 채우는 중...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🍓🫐🍌 아사이볼 채우는 중...</h1>
+
+  <div class="bowl">
+    <div class="acai-fill" id="acaiFill"></div>
+  </div>
+
+  <div class="stats">
+    <div id="amount"></div>
+    <div id="percent" class="percent"></div>
+  </div>
+
+  <div class="card">
+    <h2>💜 응원 남기기</h2>
+
+    <input id="nickname" placeholder="닉네임">
+
+    <textarea
+      id="message"
+      placeholder="한마디 남겨주세요 💜"
+    ></textarea>
+
+    <button id="submitBtn">
+      등록하기
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>💜 참여자 방명록</h2>
+    <div id="guestbook"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
