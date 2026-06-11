@@ -11,15 +11,16 @@ const supabase =
   );
 
 /* 금액 수정 */
-const currentAmount = 26012;
+const total =
+ data.reduce(
+   (sum,item) =>
+     sum + item.amount,
+   0
+ );
 const goalAmount = 158610;
 
 const percent =
-  Math.min(
-    (currentAmount / goalAmount) * 100,
-    100
-  );
-
+(total / 158610) * 100;
 document.getElementById("acaiFill").style.height =
   percent + "%";
 
